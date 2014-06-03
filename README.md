@@ -49,13 +49,19 @@ Time to rock
 ```javascript
 
 $('.my-awesome-images').polaroid();
-
 ```
 
 ### Step 4
 
 Enjoy
 
+Captions
+--------
+
+Captions can be set by using ```data-caption``` attribute for example:
+```html
+<img src="path/to/image.jpg" alt="My awesome image #1" data-caption="<h3>Me and Mary on vacation</h3>" />
+```
 
 Config reference
 ----------------
@@ -74,7 +80,6 @@ Below there is default configuration of Polaroid feel free to override
     shadow: '5px 5px 3px rgba(0,0,0,0.15)',
     borderRadius: '2px'
 }
-
 ```
 
 ```javascript
@@ -83,7 +88,6 @@ $('.my-awesome-images').polaroid({
     autoPlay:true,
     duration:5000
 });
-
 ```
 
 Advanced usage
@@ -97,5 +101,4 @@ define(['vendor/velocity/jquery.velocity', 'jquery'], function() {
         $.fn.polaroid = function(config) {
         ...
 }
-
  ```
