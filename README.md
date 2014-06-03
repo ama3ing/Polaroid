@@ -12,7 +12,6 @@ Download the plugin [zipball](https://github.com/me1ifaro/Polaroid/archive/maste
 ```sh
 
 $ bower install Polaroid
-
 ```
 
 I suggest using [velocity](https://github.com/julianshapiro/velocity) instead of standard ```jQuery.animate()```
