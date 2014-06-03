@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Polaroid by me1ifaro</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Polaroid</h1>
+        <p>jQuery plugin to create some old school polaroid images</p>
+
+        <p class="view"><a href="https://github.com/me1ifaro/Polaroid">View the Project on GitHub <small>me1ifaro/Polaroid</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/me1ifaro/Polaroid/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/me1ifaro/Polaroid/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/me1ifaro/Polaroid">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="polaroid" class="anchor" href="#polaroid"><span class="octicon octicon-link"></span></a>Polaroid</h1>
+
+<p>jQuery plugin to create some old school polaroid images</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Download the plugin <a href="https://github.com/me1ifaro/Polaroid/archive/master.zip">zipball</a> or you can install it using bower</p>
+
+<div class="highlight highlight-sh"><pre>
+<span class="nv">$ </span>bower install Polaroid
+</pre></div>
+
+<p>I suggest using <a href="https://github.com/julianshapiro/velocity">velocity</a> instead of standard <code>jQuery.animate()</code>
+All you have to do is include <code>velocity.js</code> somewhere in your page.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Usage of this plugin is very easy, I promise.</p>
+
+<h3>
+<a name="step-1" class="anchor" href="#step-1"><span class="octicon octicon-link"></span></a>Step 1</h3>
+
+<p>Include it in your page</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"path/to/polaroid.js"</span><span class="nt">&gt;</span>
+</pre></div>
+
+<h3>
+<a name="step-2" class="anchor" href="#step-2"><span class="octicon octicon-link"></span></a>Step 2</h3>
+
+<p>Create easy markup</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-awesome-images"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"path/to/image.jpg"</span> <span class="na">alt=</span><span class="s">"My awesome image #1"</span> <span class="nt">/&gt;</span>
+    ...
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<h3>
+<a name="step-3" class="anchor" href="#step-3"><span class="octicon octicon-link"></span></a>Step 3</h3>
+
+<p>Time to rock</p>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.my-awesome-images'</span><span class="p">).</span><span class="nx">polaroid</span><span class="p">();</span>
+</pre></div>
+
+<h3>
+<a name="step-4" class="anchor" href="#step-4"><span class="octicon octicon-link"></span></a>Step 4</h3>
+
+<p>Enjoy</p>
+
+<h2>
+<a name="captions" class="anchor" href="#captions"><span class="octicon octicon-link"></span></a>Captions</h2>
+
+<p>Captions can be set by using <code>data-caption</code> attribute for example:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"path/to/image.jpg"</span> <span class="na">alt=</span><span class="s">"My awesome image #1"</span> <span class="na">data-caption=</span><span class="s">"&lt;h3&gt;Me and Mary on vacation&lt;/h3&gt;"</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<h2>
+<a name="config-reference" class="anchor" href="#config-reference"><span class="octicon octicon-link"></span></a>Config reference</h2>
+
+<p>Below there is default configuration of Polaroid feel free to override</p>
+
+<div class="highlight highlight-json"><pre><span class="p">{</span>
+    <span class="err">autoPlay:</span> <span class="err">false,</span>
+    <span class="err">duration:</span> <span class="err">2000,</span>
+    <span class="err">slideBackground:</span> <span class="nt">"base64 encoded background or url to background"</span><span class="p">,</span>
+    <span class="err">rotationRange:</span> <span class="err">{</span>
+        <span class="err">min:</span> <span class="err">-7,</span>
+        <span class="err">max:</span> <span class="err">7</span>
+    <span class="p">}</span><span class="err">,</span>
+    <span class="err">shadow:</span> <span class="err">'</span><span class="mi">5</span><span class="err">px</span> <span class="mi">5</span><span class="err">px</span> <span class="mi">3</span><span class="err">px</span> <span class="err">rgba(</span><span class="mi">0</span><span class="err">,</span><span class="mi">0</span><span class="err">,</span><span class="mi">0</span><span class="err">,</span><span class="mf">0.15</span><span class="err">)',</span>
+    <span class="err">borderRadius:</span> <span class="err">'</span><span class="mi">2</span><span class="err">px'</span>
+<span class="err">}</span>
+</pre></div>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.my-awesome-images'</span><span class="p">).</span><span class="nx">polaroid</span><span class="p">({</span>
+    <span class="nx">autoPlay</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+    <span class="nx">duration</span><span class="o">:</span><span class="mi">5000</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="advanced-usage" class="anchor" href="#advanced-usage"><span class="octicon octicon-link"></span></a>Advanced usage</h2>
+
+<p>If you want to use Polaroid with require js modify file as following</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">define</span><span class="p">([</span><span class="s1">'vendor/velocity/jquery.velocity'</span><span class="p">,</span> <span class="s1">'jquery'</span><span class="p">],</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="s2">"use strict"</span><span class="p">;</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">polaroid</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/me1ifaro">me1ifaro</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
