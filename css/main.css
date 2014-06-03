@@ -98,23 +98,139 @@ textarea {
    ========================================================================== */
 
 body {
-    background: #3498db;
+    background: url('../img/retina_wood.png');
+    text-align: center;
 }
 .heading {
-    font-family: lemon;
+    font-family: Amaranth;
     font-size: 64px;
-    color: #ecf0f1;
+    color: #34495e  ;
     text-align: center;
 }
 .heading img {
-    margin-top: -35px;
     margin-right: 10px;
 }
 
+.demo-container {
+    width: 300px;
+    margin: 0 auto;
+}
+.polaroid-caption {
+    padding: 10px;
+    font-family: "Coming Soon";
+}
+.installation-tip {
+    font-family: "Coming Soon";
+    font-size: 20px;
+}
+pre {
+    width: 300px;
+    margin: 0 auto;
+    background: #000;
+    padding: 20px;
+    color: #fff;
+    border-radius: 15px;
+}
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
 
+.credits {
+    margin-top: 60px;
+}
 
+.download {
+    -moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b) );
+    background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+    background-color:#9dce2c;
+    -webkit-border-top-left-radius:20px;
+    -moz-border-radius-topleft:20px;
+    border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -moz-border-radius-topright:20px;
+    border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    -moz-border-radius-bottomright:20px;
+    border-bottom-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -moz-border-radius-bottomleft:20px;
+    border-bottom-left-radius:20px;
+    text-indent:0;
+    border:1px solid #83c41a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:65px;
+    line-height:65px;
+    width:131px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #689324;
+}
 
+.documentation {
+    -moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+    box-shadow:inset 0px 1px 0px 0px #cae3fc;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+    background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+    background-color:#79bbff;
+    -webkit-border-top-left-radius:20px;
+    -moz-border-radius-topleft:20px;
+    border-top-left-radius:20px;
+    -webkit-border-top-right-radius:20px;
+    -moz-border-radius-topright:20px;
+    border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    -moz-border-radius-bottomright:20px;
+    border-bottom-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -moz-border-radius-bottomleft:20px;
+    border-bottom-left-radius:20px;
+    text-indent:0;
+    border:1px solid #469df5;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:65px;
+    line-height:65px;
+    width:131px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #287ace;
+}
+.documentation:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+    background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+    background-color:#4197ee;
+}.documentation:active {
+     position:relative;
+     top:1px;
+ }
+/* This button was generated using CSSButtonGenerator.com */
 
+.download:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+    background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+    background-color:#8cb82b;
+}.download:active {
+     position:relative;
+     top:1px;
+ }
 
 
 

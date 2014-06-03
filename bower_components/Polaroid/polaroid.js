@@ -215,20 +215,11 @@ $.fn.polaroid = function(config) {
 
         return Polaroid;
     };
+
     return this.each(function () {
         var polaroid = new Polaroid(config);
-        var loaded = 0;
-
         polaroid.$src = $(this);
-        polaroid.$src.find('img').each(function () {
-            $(this).on('load', function () {
-                loaded++;
-                if (loaded == polaroid.$src.find('img').length) {
-                    polaroid.init(config);
-                }
-            });
-        });
         polaroid.init(config);
     });
-};
+}
 

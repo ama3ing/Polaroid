@@ -23,14 +23,13 @@
     "jquery": "*",
     "velocity": "~0.0.19"
   },
-  "_release": "247e8f9cbb",
+  "_release": "19c7f13839",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "247e8f9cbbb439e617bab744aca1df41be4c6929"
+    "commit": "19c7f138397fc4d6d9ac3ad7c01a4070046cbcf2"
   },
   "_source": "git://github.com/me1ifaro/Polaroid.git",
   "_target": "*",
-  "_originalSource": "Polaroid",
-  "_direct": true
+  "_originalSource": "Polaroid"
 }
