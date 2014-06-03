@@ -1,0 +1,36 @@
+{
+  "name": "Polaroid",
+  "homepage": "https://github.com/me1ifaro/Polaroid",
+  "authors": [
+    "Iakov Mishchenko <iakov@codeforges.com>"
+  ],
+  "description": "jQuery plugin to create some old school polaroid images",
+  "main": "polaroid.js",
+  "keywords": [
+    "slider",
+    "polaroid",
+    "images"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "velocity": "~0.0.19"
+  },
+  "_release": "247e8f9cbb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "247e8f9cbbb439e617bab744aca1df41be4c6929"
+  },
+  "_source": "git://github.com/me1ifaro/Polaroid.git",
+  "_target": "*",
+  "_originalSource": "Polaroid",
+  "_direct": true
+}
