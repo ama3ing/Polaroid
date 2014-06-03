@@ -1,8 +1,7 @@
 Polaroid
 ========
 
-jQuery plugin to create some old school polaroid images
-
+jQuery plugin to create some old school polaroid images. [Demo](http://me1ifaro.github.io/Polaroid/)
 
 Installation
 ------------
