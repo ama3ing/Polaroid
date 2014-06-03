@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ca783b0-2260-4980-814c-b40b062c3211" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/retina_wood.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/Polaroid-Camera-icon.png" afterPath="$PROJECT_DIR$/img/Polaroid-Camera-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/Polaroid/.bower.json" afterPath="$PROJECT_DIR$/bower_components/Polaroid/.bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/Polaroid/polaroid.js" afterPath="$PROJECT_DIR$/bower_components/Polaroid/polaroid.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Polaroid.iws" />
@@ -46,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29288703" vertical-offset="0" max-vertical-offset="1155">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.5606695" vertical-offset="438" max-vertical-offset="1185">
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -370,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29288703" vertical-offset="0" max-vertical-offset="1155">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.5606695" vertical-offset="438" max-vertical-offset="1185">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
