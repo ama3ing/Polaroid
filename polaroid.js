@@ -175,8 +175,11 @@ $.fn.polaroid = function(config) {
                 getRandomInt: function (min, max) {
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 },
+                isAnimationBlocked: function($el) {
+                    return $el.data("polaroid-animation-blocked") === true;
+                },
                 forward: function ($el) {
-                    if ($el.data("polaroid-animation-blocked") !== true) {
+                    if (!Polaroid.utility.isAnimationBlocked($el)) {
                         $el.data("polaroid-animation-blocked", true);
                         var left = parseFloat($el.css('left'));
                         if (typeof $.fn.velocity == 'function') {
@@ -205,16 +208,10 @@ $.fn.polaroid = function(config) {
                     }
                 },
                 rebuildZ: function ($el) {
-                    var z;
                     for (var slide in Polaroid.slides) {
-                        if ($(Polaroid.slides[slide]).css('z-index') == $el.css('z-index')) {
-                            z = parseInt($(Polaroid.slides[slide]).css('z-index')) - Polaroid.slides.length;
-                            $(Polaroid.slides[slide]).css('z-index', z);
-                        } else {
-                            z = parseInt($(Polaroid.slides[slide]).css('z-index')) + 1;
-                            $(Polaroid.slides[slide]).css('z-index', z);
-                        }
+                        $(Polaroid.slides[slide]).css('z-index', '+=1');
                     }
+                    $el.css('z-index', '-=' + Polaroid.slides.length);
                 }
 
             }
