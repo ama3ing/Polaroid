@@ -3,7 +3,8 @@
   "version": "1.0.0-alpha",
   "homepage": "https://github.com/me1ifaro/Polaroid",
   "authors": [
-    "Iakov Mishchenko <iakov@codeforges.com>"
+    "Iakov Mishchenko <iakov@codeforges.com>",
+    "Eduardo Páez Rubio <epaezrubio@gmail.com>"
   ],
   "description": "jQuery plugin to create some old school polaroid images",
   "main": "polaroid.js",

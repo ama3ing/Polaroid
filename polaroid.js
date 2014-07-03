@@ -175,39 +175,43 @@ $.fn.polaroid = function(config) {
                 getRandomInt: function (min, max) {
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 },
+                isAnimationBlocked: function($el) {
+                    return $el.data("polaroid-animation-blocked") === true;
+                },
                 forward: function ($el) {
-                    var left = parseFloat($el.css('left'));
-                    if (typeof $.fn.velocity == 'function') {
-                        $el.velocity({
-                            left: left + $el.width() * 1.3
-                        }, 300, function () {
-                            Polaroid.utility.rebuildZ($el);
+                    if (!Polaroid.utility.isAnimationBlocked($el)) {
+                        $el.data("polaroid-animation-blocked", true);
+                        var left = parseFloat($el.css('left'));
+                        if (typeof $.fn.velocity == 'function') {
                             $el.velocity({
-                                left: left
-                            }, 300)
-                        });
-                    } else {
-                        $el.animate({
-                            left: left + $el.width() * 1.3
-                        }, 300, function () {
-                            Polaroid.utility.rebuildZ($el);
+                                left: left + $el.width() * 1.3
+                            }, 300, function () {
+                                Polaroid.utility.rebuildZ($el);
+                                $el.velocity({
+                                    left: left
+                                }, 300, function () {
+                                    $el.data("polaroid-animation-blocked", false);
+                                })
+                            });
+                        } else {
                             $el.animate({
-                                left: left
-                            }, 300)
-                        });
+                                left: left + $el.width() * 1.3
+                            }, 300, function () {
+                                Polaroid.utility.rebuildZ($el);
+                                $el.animate({
+                                    left: left
+                                }, 300, function () {
+                                    $el.data("polaroid-animation-blocked", false);
+                                })
+                            });
+                        }
                     }
                 },
                 rebuildZ: function ($el) {
-                    var z;
                     for (var slide in Polaroid.slides) {
-                        if ($(Polaroid.slides[slide]).css('z-index') == $el.css('z-index')) {
-                            z = parseInt($(Polaroid.slides[slide]).css('z-index')) - Polaroid.slides.length;
-                            $(Polaroid.slides[slide]).css('z-index', z);
-                        } else {
-                            z = parseInt($(Polaroid.slides[slide]).css('z-index')) + 1;
-                            $(Polaroid.slides[slide]).css('z-index', z);
-                        }
+                        $(Polaroid.slides[slide]).css('z-index', '+=1');
                     }
+                    $el.css('z-index', '-=' + Polaroid.slides.length);
                 }
 
             }
