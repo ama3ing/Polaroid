@@ -3,6 +3,8 @@ Polaroid
 
 jQuery plugin to create some old school polaroid images. [Demo](http://me1ifaro.github.io/Polaroid/)
 
+Proudly supported by [apps developers](http://appsdevelopers.eu)
+
 Installation
 ------------
 
